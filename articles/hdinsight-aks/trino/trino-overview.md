@@ -35,8 +35,8 @@ A Trino worker is a server in a Trino installation, which is responsible for exe
 
 ## Trademarks
 
-Product names, other names, logos and other material used on this site are registered trademarks of various entities including, but not limited to, the following trademark owners and names:
-- [Apache Software Foundation](https://apache.org/) which may contain referecens to Apache Hadoop, Apache Hive, Apache Kafka, and other names
-- [Apache Trademark Listing](https://www.apache.org/foundation/marks/list/)
+Product names, other names, logos and other material used on site pages for Trino with HDInsight on AKS are registered trademarks of various entities including, but not limited to, the following trademark owners and names:
+- [Apache Software Foundation](https://apache.org/) which may contain referecens to Apache Hadoop, Apache Hive, Apache Kafka, and [other names](https://www.apache.org/foundation/marks/list/)
+- Trino is open source software licensed under the [Apache License 2.0](https://github.com/trinodb/trino/blob/master/LICENSE)
 
 
