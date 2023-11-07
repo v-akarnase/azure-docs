@@ -3,7 +3,7 @@ title: Monitoring with Azure Managed Prometheus and Grafana
 description: Learn how to use monitor With Azure Managed Prometheus and Grafana
 ms.service: hdinsight-aks
 ms.topic: how-to
-ms.date: 10/27/2023
+ms.date: 11/07/2023
 ---
 
 # Monitoring with Azure Managed Prometheus and Grafana
@@ -142,26 +142,30 @@ User permission: For viewing Azure Managed Grafana, “Grafana Viewer” role is
    > For viewing other roles for Grafana users see  [here](../managed-grafana/how-to-share-grafana-workspace.md).
        
 ## View metrics
-You can use the Grafana dashboard to view the service and system. Trino cluster as an example, assuming few jobs are executed in the cluster.  
 
-1. Open the Grafana link in the cluster overview page.
+You can use the Grafana dashboard to view the service and system. We are using an Apache Spark™ cluster as an example, assuming few jobs are executed in the cluster. In order to have the metrics.  
 
-    :::image type="content" source="./media/monitor-with-prometheus-grafana/view-metrics.png" alt-text="Screenshot showing how to view-metrics." border="true" lightbox="./media/monitor-with-prometheus-grafana/view-metrics.png":::
+Review the following steps to use the Grafana sample templates:
 
-1. The default value on the Explore tab is **Grafana**.
+1. Download the sample template from here <add the githubrepo link> for the respective workloads. 
+
+1. Login to the Grafana Dashboard from your cluster.
+   
+   :::image type="content" source="./media/monitor-with-prometheus-grafana/set-time-frame.png" alt-text="Screenshot showing how to set time frame." border="true" lightbox="./media/monitor-with-prometheus-grafana/set-time-frame.png":::
+    
 1. Select on the dropdown and click on the `Managed Prometheus.…. <workspace name>` option and select the parameters of the time frame required.
 
     :::image type="content" source="./media/monitor-with-prometheus-grafana/set-time-frame.png" alt-text="Screenshot showing how to set time frame." border="true" lightbox="./media/monitor-with-prometheus-grafana/set-time-frame.png":::
 
-1.  Next Select the metric you want to see.
+1.  Once the Grafana Dashboard page is opened, click on New > Import 
 
     :::image type="content" source="./media/monitor-with-prometheus-grafana/metric-type.png" alt-text="Screenshot showing how to metric type." border="true" lightbox="./media/monitor-with-prometheus-grafana/metric-type.png":::
 
-1. Click on **Run Query** and select the timeframe on how often the query should be run.
+1. Click on the Upload Dashboard JSON file and upload the respective template that you have downloaded. 
 
     :::image type="content" source="./media/monitor-with-prometheus-grafana/run-query.png" alt-text="Screenshot showing how to run query." border="true" lightbox="./media/monitor-with-prometheus-grafana/run-query.png":::
 
-1. View the metric as per selection.
+1. After the upload is complete you can click on the dashboard to view the metrics. 
 
     :::image type="content" source="./media/monitor-with-prometheus-grafana/view-output.png" alt-text="Screenshot showing how to view the output." border="true" lightbox="./media/monitor-with-prometheus-grafana/view-output.png":::
 
